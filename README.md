@@ -3,20 +3,14 @@
 A fun side-project to play with various coding techniques, with a view on performance... and how to get to good performance.
 
 ## TODO
+- rework Server so that message parsing, storing, send/receive is separated (so I can test it)
+- implement (with tests) the min/max/mean logic in Server.
+  - integration tests need more cases
+  - can this be unit tested?
 
-- enable GC logs
-- see that compilation in hotspot has occurred.
-- write something up. compare transports for speed. probs need mean/max/mode.
-
-- Then, aim at taking a query from client and calculating averages as we go. speed! subscribe to updates on it.
-
-## Sources
-
-A sample echo client:
-
-https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/networking/sockets/examples/EchoClient.java
-
-
+Then,
+- perf-test measurements.
+- make fast
 
 ## Reading
 
@@ -24,6 +18,8 @@ These two links describe using Java NIO to re-use the same thread to handle mult
 
 - https://www.machinet.net/tutorial-eng/how-to-implement-sockets-in-java-applications
 - https://www.baeldung.com/java-nio-selector
+
+Should probably start by explaining these concepts when I write this up.
 
 And this is about `xrank`, what Q/KDB uses to compute quartiles / percentiles:
 
